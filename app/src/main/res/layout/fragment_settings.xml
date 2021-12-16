@@ -1,0 +1,41 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/settings"
+    tools:context=".view.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textTempFormat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/radioGroup"
+        android:text="@string/settings_temp_calculation"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/text_18"
+        android:layout_margin="@dimen/dim_20"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textTempFormat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <RadioButton
+            android:id="@+id/radioBtnCelsius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/celsius" />
+        <RadioButton
+            android:id="@+id/radioBtnFarenheit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/farenheit" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_margin="@dimen/dim_8"
+    android:elevation="@dimen/dim_8"
+    app:cardCornerRadius="@dimen/dim_8">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="@dimen/dim_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/weatherDesc"
+            android:layout_width="@dimen/dim_140"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim_8"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textSize="@dimen/text_18"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Rainy" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/temprature"
+            android:layout_width="@dimen/dim_0"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim_8"
+            android:fontFamily="sans-serif-medium"
+            android:lines="1"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weatherDesc"
+            tools:text="120 c" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/humidity"
+            android:layout_width="@dimen/dim_0"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim_8"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/temprature"
+            tools:text="35" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/time"
+            android:layout_width="@dimen/dim_0"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim_8"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/humidity"
+            tools:text="12 pm" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

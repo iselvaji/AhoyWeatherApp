@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/city_name"
+        android:layout_width="@dimen/dim_0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_8"
+        android:layout_marginTop="@dimen/dim_8"
+        android:layout_marginEnd="@dimen/dim_8"
+        android:textSize="@dimen/text_18"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/dim_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="City" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/country"
+        android:layout_width="@dimen/dim_0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_8"
+        android:layout_marginTop="@dimen/dim_8"
+        android:layout_marginEnd="@dimen/dim_8"
+        android:textSize="@dimen/text_18"
+        android:layout_margin="@dimen/dim_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/city_name"
+        tools:text="country" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/weatherInfo"
+        android:layout_width="@dimen/dim_0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_8"
+        android:layout_marginTop="@dimen/dim_8"
+        android:layout_marginEnd="@dimen/dim_8"
+        android:textSize="@dimen/text_18"
+        android:layout_margin="@dimen/dim_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/country"
+        tools:text="@string/weather" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_16"
+        android:padding="@dimen/dim_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weatherInfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
