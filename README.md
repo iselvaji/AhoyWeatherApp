@@ -31,3 +31,5 @@ Dependency Injection - Hilt
 Database : Room
 
 UI - Recylerview + Card view
+
+Weather deatils - OpenWeatherMap api
